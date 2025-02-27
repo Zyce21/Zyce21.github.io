@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    transition: background 1s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    transition: box-shadow 0.5s ease;
+}
+
+#display {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 1.8em;
+    text-align: right;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #fff;
+}
+
+@keyframes changeBackgroundColor {
+    0% { background: linear-gradient(45deg, #3498db, #2ecc71); }
+    25% { background: linear-gradient(45deg, #e74c3c, #2ecc71); }
+    50% { background: linear-gradient(45deg, #2ecc71, #f39c12); }
+    75% { background: linear-gradient(45deg, #f39c12, #3498db); }
+    100% { background: linear-gradient(45deg, #3498db, #2ecc71); }
+}
