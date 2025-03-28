@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best of Rockwell: Restaurant Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <h3> Best of Rockwell </h3>
+    <h1>Restaurant Guide</h1>
+    <h4>Produced by: Carloz Clemente</h4>
+
+    <div class="restaurant-container">
+        <div class="restaurant-card" onclick="showDetails('chefJessie')">
+            <img src="images/chef.png" alt="Chef Jessie">
+            <div class="restaurant-name">Chef Jessie Rockwell Club</div>
+        </div>
+        
+        <div class="restaurant-card" onclick="showDetails('rockysCafe')">
+            <img src="images/rocky.jpg" alt="Rocky's Café">
+            <div class="restaurant-name">Rocky's Café and Bar</div>
+        </div>
+        
+        <div class="restaurant-card" onclick="showDetails('loungeRockwell')">
+            <img src="images/lounge.jpg" alt="The Lounge">
+            <div class="restaurant-name">The Lounge at The Rockwell Club</div>
+        </div>
+        
+        <div class="restaurant-card" onclick="showDetails('pepperLunch')">
+            <img src="images/pepper.jpeg" alt="Pepper Lunch">
+            <div class="restaurant-name">Pepper Lunch</div>
+        </div>
+    </div>
+
+    <!-- Modal for Restaurant Details -->
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails()">&times;</span>
+            <img id="details-image" src="" alt="Restaurant Image" class="modal-image">
+            <div id="details-content"></div>
+        </div>
+    </div>
+
+</body>
+</html>
